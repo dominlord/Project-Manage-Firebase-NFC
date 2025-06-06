@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/relative_khung"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="51dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/baseline_arrow_back_ios_24"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Tìm kiếm UID User" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/sortSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+
+    <ListView
+        android:id="@+id/listViewPosts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "793734088553",
+    "project_id": "project-nckh-3c273",
+    "storage_bucket": "project-nckh-3c273.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793734088553:android:ff90b8cf74b27f18a49ff8",
+        "android_client_info": {
+          "package_name": "com.example.duan_nckh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAXESf4OEr0Ayq1jPNJjLrVy3Z0JnmsyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

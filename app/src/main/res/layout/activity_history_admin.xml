@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryAdminActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="60dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ViewFlipper
+                android:id="@+id/viewFlipperLSND"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inAnimation="@anim/relative_slide_in_left"
+                android:outAnimation="@anim/relative_slide_out_right">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/lichsuUser_btn"
+                    android:background="@drawable/relative_button_shape_profile_ca_nhan"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Lịch sử người dùng"
+                        android:shadowColor="#80000000"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="4"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/lightButton4"
+                        android:layout_width="119dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/history" />
+                </RelativeLayout>
+            </ViewFlipper>
+
+            <!-- ViewFlipper 1 -->
+            <ViewFlipper
+                android:id="@+id/viewFlipperLSNPT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inAnimation="@anim/relative_slide_in_left"
+                android:outAnimation="@anim/relative_slide_out_right">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/lichsuAdmin_btn"
+                    android:background="@drawable/relative_button_shape_profile_tong_quan"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Lịch sử nhà phát triển"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:shadowColor="#80000000"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="4"/>
+
+                    <ImageView
+                        android:id="@+id/lightButton1"
+                        android:layout_width="119dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/history" />
+                </RelativeLayout>
+            </ViewFlipper>
+
+            <ViewFlipper
+                android:id="@+id/viewFlipperDiemDanh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inAnimation="@anim/relative_slide_in_left"
+                android:outAnimation="@anim/relative_slide_out_right">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/diemdanh_btn"
+                    android:background="@drawable/relative_button_shape_profile_tong_quan"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Điểm danh người dùng"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:shadowColor="#80000000"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="4"/>
+
+                    <ImageView
+                        android:id="@+id/lightButton12"
+                        android:layout_width="119dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/search" />
+                </RelativeLayout>
+            </ViewFlipper>
+
+            <ViewFlipper
+                android:id="@+id/viewFlipperDangXuat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inAnimation="@anim/relative_slide_in_left"
+                android:outAnimation="@anim/relative_slide_out_right">
+
+                <RelativeLayout
+                    android:id="@+id/logoutButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/setting_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Đăng xuất"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:shadowColor="#80000000"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="4"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+            </ViewFlipper>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu_admin" />
+</RelativeLayout>

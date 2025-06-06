@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DuAn_NCKH"
+        tools:targetApi="31">
+        <activity
+            android:name=".SettingDiemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HocTapUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuanLyTinTucActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NhanPhanHoiTuAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhanHoiDenUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DiemDanhActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReadPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManagePostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreatePostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuenMKActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailPhanHoiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HienThiPhanHoiAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhanHoiAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HienThiDuLieu_NFCActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HienThiThongTinQR_UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NFCActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HienThiThongTinQRActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HienThiDataBaseAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HienThiDanhSachLichSuUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LichSuSuaUidAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChinhSuaUserTuAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HienThiDanhSachUidActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LichSuThayDoiUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NhapThongTinTongQuanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NhapThongTinCaNhanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThongTinTongQuanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThongTinCaNhanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HelperAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataBaseAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SupportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DangKiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PortraitCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/zxing_CaptureTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

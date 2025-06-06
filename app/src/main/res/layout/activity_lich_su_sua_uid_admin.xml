@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LichSuSuaUidAdminActivity">
+
+    <!-- Thanh tiêu đề -->
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/relative_khung"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="51dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/baseline_arrow_back_ios_24"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/Textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Danh sách thay đổi từ Admin"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Danh sách lịch sử -->
+    <ListView
+        android:id="@+id/historyListView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayout01"
+        android:layout_margin="8dp" />
+
+</RelativeLayout>

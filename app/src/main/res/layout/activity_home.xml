@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="16dp">
+
+        <ViewFlipper
+            android:id="@+id/viewFlipperQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inAnimation="@anim/relative_slide_in_left"
+            android:outAnimation="@anim/relative_slide_out_right">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/btnScanQR1"
+                android:background="@drawable/relative_button_shape_profile_ca_nhan"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Quét mã QR"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/lightButton4"
+                    android:layout_width="119dp"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/scanqr" />
+            </RelativeLayout>
+        </ViewFlipper>
+
+        <ViewFlipper
+            android:id="@+id/viewFlipperStudy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inAnimation="@anim/relative_slide_in_left"
+            android:outAnimation="@anim/relative_slide_out_right">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/btnStudy"
+                android:background="@drawable/relative_button_shape_profile_ca_nhan"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Học tập"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/lightButton44"
+                    android:layout_width="119dp"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/books" />
+            </RelativeLayout>
+        </ViewFlipper>
+
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="4dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+
+
+</RelativeLayout>

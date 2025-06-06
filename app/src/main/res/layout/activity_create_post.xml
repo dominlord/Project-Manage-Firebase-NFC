@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="60dp"
+        android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!-- Thanh tiêu đề -->
+    <RelativeLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/relative_khung"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="51dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/baseline_arrow_back_ios_24"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/Textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/backBtn"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:text="Đăng tải tin tức"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- EditText Tiêu đề -->
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tiêu đề"
+        android:layout_below="@id/linearLayout01"
+        android:layout_marginTop="20dp" />
+
+    <!-- EditText Nội dung -->
+    <EditText
+        android:id="@+id/edtContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTitle"
+        android:layout_marginTop="16dp"
+        android:hint="Nội dung"
+        android:gravity="top"
+        android:inputType="textMultiLine" />
+
+    <RelativeLayout
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/edtContent"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/setting_button_thongtincanhan"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="0dp"
+            android:text="Đăng tải"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/bottom_news"
+        android:icon="@drawable/baseline_newspaper_24"
+        android:title="News" />
+    <item
+        android:id="@+id/bottom_supports"
+        android:icon="@drawable/baseline_help_center_24"
+        android:title="Support" />
+    <item
+        android:id="@+id/bottom_profile"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Profile" />
+</menu>
